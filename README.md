@@ -1,2 +1,10 @@
 # patient-list-css-demo
-css demo by catt
+CSS demo by catt
+
+this repo includes
+
+index.html
+loadContent.js
+style.css
+
+as of now, only tested using chrome.
