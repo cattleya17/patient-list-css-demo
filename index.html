@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <script src="loadContent.js"></script>
+
+
+    <title>Patient List - Catt's Demo</title>
+  </head>
+
+  <body>
+      <main class="main">
+          <div class="container">
+
+            <nav class="nav-left">
+
+                <div class="logo-container">
+                    <img class="img-logo" src="https://storage.googleapis.com/catt-test/docbuddy-logo.png" alt="">
+                </div>
+
+                <ul class="vertical-navlist" id="leftNav">
+
+                    <script>
+                       getNavList();
+                     </script>
+                    
+                </ul>
+
+
+            </nav>
+
+            <div class="content-container">
+                <nav class="top-nav flex-center">
+                    
+                    <div class="page-title">
+                        <h1>Patients</h1>
+                    </div>
+                    <div class="content-tabs">
+                        <ul class="flex-start-center" id="pageTabs">
+                            <li>
+                                <a href="#" class="active">Procedures</a>
+                            </li>
+                            <li>
+                                <a href="#">Appointments</a>
+                            </li>
+                            <li>
+                                <a href="#">Documents</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="avatar-container">
+                        <img class="img-avatar" src="https://storage.googleapis.com/catt-test/lime-cat.jpg" alt="">
+                    </div>
+
+                </nav>
+
+                <div class="main-content-container">
+
+                    <div class="content-panel">
+                        <span class="material-icons material-icons-outlined flex-center" id="btnAddRow">
+                            add
+                        </span>
+                    </div>
+
+                    <div class="table-container">
+                        <table id="tablePatientList">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div class="checkbox focus">
+                                            <input type="checkbox" id="selectAll">
+                                            <span class="check flex-center">
+                                                <i class="checked-icon" data-feather="check"></i>
+                                            </span>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div>
+                                            <span class="material-icons material-icons-outlined">search</span>
+                                            <h5>Last Name</h5>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div>
+                                            <span class="material-icons material-icons-outlined">search</span>
+                                            <h5>First Name</h5>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div>
+                                            <span class="material-icons material-icons-outlined">filter_list</span>
+                                            <h5>DOB</h5>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div>
+                                            <span class="material-icons material-icons-outlined">filter_list</span>
+                                            <h5>Gender</h5>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div>
+                                            <span class="material-icons material-icons-outlined">filter_list</span>
+                                            <h5>Status</h5>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                <!-- <tr class="round-borders">
+                                    <td>
+                                        <div class="checkbox focus">
+                                            <input type="checkbox">
+                                            <span class="check">
+                                                <i class="checked-icon" data-feather="check"></i>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td>Smith</td>
+                                    <td>Trevor</td>
+                                    <td>04/12/98</td>
+                                    <td>Male</td>
+                                    <td>Active</td>
+                                    <td class="active"></td>
+                                </tr> -->
+                                
+                                <script>getPatientList();</script>
+                            </tbody>
+                            
+                        </table>
+                    </div>
+                </div>
+
+                <div class="bottom-component">
+                    
+                    <div class="bottom-panel-container flex-center">
+                        
+                        <div class="select-counter">
+                            <span>
+                                2 selected
+                            </span>
+                        </div>
+                        
+                        <div class="vl-right"></div>
+
+                        <div class="tool-buttons">
+
+                           
+                            <span class="material-icons material-icons-outlined">
+                                content_copy
+                            </span>
+                            <span class="material-icons material-icons-outlined">
+                                print
+                            </span>
+                            <span class="material-icons material-icons-outlined">
+                                file_download
+                            </span>
+                            <span class="material-icons material-icons-outlined">
+                                delete
+                            </span>
+
+
+                        </div>
+
+                        <div class="vl-left"></div>
+                       
+                        
+                        <div class="toggle-container flex-center">
+                            
+                            <span>Show only selected</span>
+                            <div class="toggle">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                
+            </div>
+
+          </div>
+      </main>
+      <script>
+        feather.replace({'stroke-width': 3.5 })
+      </script>
+  </body>
+</html>
