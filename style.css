@@ -30,7 +30,7 @@ nav ul a{
     display:flex;
 }
 .flex-center{
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
 }
@@ -186,7 +186,8 @@ li.navlist-item > * {
 /* table */
 .table-container{
     padding: 0 1%;
-    overflow: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
     height: 70vh;
 }
 
