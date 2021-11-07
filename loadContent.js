@@ -40,13 +40,13 @@ function getPatientList(){
         document.write('<tr class="round-borders patientRow">');
         document.write('<td><div class="checkbox focus">');
         document.write('<input type="checkbox"><span class="check flex-center"><i class="checked-icon" data-feather="check"></i></span></div></td> ');
-        document.write('<td>' + patientList[p][0] + '</td>');
-        document.write('<td>' + patientList[p][1] + '</td>');
-        document.write('<td>' + patientList[p][2] + '</td>');
-        document.write('<td>' + patientList[p][3] + '</td>');
-        document.write('<td class="status font-' + patientList[p][4] + '">' + patientList[p][4] + '</td>');
+        document.write('<td><span>' + patientList[p][0] + '</span></td>');
+        document.write('<td><span>' + patientList[p][1] + '</span></td>');
+        document.write('<td><span>' + patientList[p][2] + '</span></td>');
+        document.write('<td><span>' + patientList[p][3] + '</span></td>');
+        document.write('<td class="status font-' + patientList[p][4] + '"><span>' + patientList[p][4] + '</span></td>');
         document.write('<td class="'+ patientList[p][4] + '"></td>');
-        document.write('</tr>');   
+        document.write('</tr><tr class="spacer"></tr>');
   
     }
 }
