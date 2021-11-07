@@ -40,6 +40,10 @@ nav ul a{
     align-items: center;
 }
 
+.uppercase{
+    text-transform: uppercase !important;
+}
+
 /* navbar left */
 
 nav.nav-left {
