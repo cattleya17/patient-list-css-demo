@@ -63,15 +63,14 @@ $(document).ready(function(){
     });
 
     $('#selectAll').click(function(){
-        $(this).parent().toggleClass('on');
-        $('.checkbox').toggleClass('on');
-
 
         if ($(this).parent().hasClass('on')) {
             $('.checkbox').removeClass('on');
             $('.checkbox').addClass('on');
+            $('.patientRow').addClass('selected');
         } else {
             $('.checkbox').removeClass('on');
+            $('.patientRow').removeClass('selected');
         }
 
     });
