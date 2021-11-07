@@ -44,7 +44,7 @@ function getPatientList(){
         document.write('<td><span>' + patientList[p][1] + '</span></td>');
         document.write('<td><span>' + patientList[p][2] + '</span></td>');
         document.write('<td><span>' + patientList[p][3] + '</span></td>');
-        document.write('<td class="status font-' + patientList[p][4] + '"><span>' + patientList[p][4] + '</span></td>');
+        document.write('<td class="status font-' + patientList[p][4] + '"><span class="uppercase">' + patientList[p][4] + '</span></td>');
         document.write('<td class="'+ patientList[p][4] + '"></td>');
         document.write('</tr><tr class="spacer"></tr>');
   
