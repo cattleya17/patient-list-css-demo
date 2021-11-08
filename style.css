@@ -193,6 +193,7 @@ li.navlist-item > * {
     overflow-y: auto;
     overflow-x: hidden;
     height: 70vh;
+    padding-bottom: 15px;
 }
 
 #tablePatientList{
@@ -202,6 +203,10 @@ li.navlist-item > * {
 #tablePatientList th, #tablePatientList td{
     height: 75px;
     text-align: left;
+}
+
+#tablePatientList td{
+    background-color: #ffffff;
 }
 
 #tablePatientList th:first-child, #tablePatientList td:first-child{
@@ -238,7 +243,6 @@ li.navlist-item > * {
 }
 
 #tablePatientList tbody tr.round-borders {
-    background-color: #ffffff;
     border-radius: 12px;
 }
 
