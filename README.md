@@ -7,4 +7,4 @@ index.html
 loadContent.js
 style.css
 
-as of now, only tested using chrome.
+as of now, only tested using chrome and firefox.
